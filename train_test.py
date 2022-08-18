@@ -6,7 +6,7 @@ features = np.load("test_alpha.npz")['arr_0']
 print(features.shape)
 print(labels.shape)
 
-train_images, test_images, train_labels, test_labels = train_test_split(features,test_size=0.1,random_state=42)
+train_images, test_images, train_labels, test_labels = train_test_split(features,test_size=0.2,random_state=42)
 print(train_images.shape)
 
 np.savez_compressed("alpha_train_images.npz",train_images)
